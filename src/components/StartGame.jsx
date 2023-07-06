@@ -4,13 +4,15 @@ import diceImage from "../assets/dices 1.svg";
 
 import { Button } from "../style/Button";
 
-const StartGame = () => {
+const StartGame = ({ handleToggle }) => {
     return (
         <Container>
             <img src={diceImage} alt="diceImage" />
+
             <div className="content">
                 <h1>Dice</h1>
-                <Button>PLAY</Button>
+
+                <Button onClick={handleToggle}>PLAY</Button>
             </div>
         </Container>
     );

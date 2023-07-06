@@ -1,5 +1,9 @@
 import { useState } from "react";
 
+import { styled } from "styled-components";
+import TotalScore from "./TotalScore";
+import NumberSelector from "./NumberSelector";
+
 const GamePlay = () => {
     const [score, SetScore] = useState(0);
 
@@ -11,7 +15,12 @@ const GamePlay = () => {
 
     const [showRules, setShowRules] = useState(false);
 
-    return <div></div>;
+    return (
+        <main>
+            <TotalScore />
+            <NumberSelector />
+        </main>
+    );
 };
 
 export default GamePlay;
