@@ -1,7 +1,13 @@
 import "./App.css";
 
+import StartGame from "./components/StartGame";
+
 function App() {
-    return <></>;
+    return (
+        <>
+            <StartGame />
+        </>
+    );
 }
 
 export default App;
